@@ -1,27 +1,5 @@
-# -*- coding: utf-8
-
-# This file is part of MAG Snakemake workflow.
-#
-# MAG Snakemake workflow is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-
-# MAG Snakemake workflow is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-
-# You should have received a copy of the GNU General Public License
-# along with MAG Snakemake workflow.  If not, see <https://www.gnu.org/licenses/>.
-
-#'''
-#   This is a basic framework for recovery and basic quality control of MAGs
-#   To visualize the pipeline: snakemake --dag | dot -Tpng > dag.png
-#'''
-
-__maintainer__ = "Sara Kashaf"
-__email__ = "sskashaf@ebi.ac.uk"
+__maintainer__ = "Chengkai Zhu"
+__email__ = "357171461@qq.com"
 
 
 import os
@@ -31,10 +9,10 @@ import glob
 import pandas as pd
 import csv
 
-configfile: "config.yaml"
+configfile: "config.yaml" 
 
 # Directory structure
-DATA_DIR = "data" #config['data']
+DATA_DIR = "data" #config['data']  
 preprocessing_dir = "00_preprocessing"
 assembly_dir = "01_assembly"
 binning_dir = "02_binning"
