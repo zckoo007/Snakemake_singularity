@@ -2,7 +2,7 @@
 
 usage()
 {
-cat << EOF
+cat << EOF # 开始
 usage: $0 options
 
 CMseq workflow to infer strain heterogeneity of MAG.
@@ -16,7 +16,7 @@ OPTIONS:
    -r      MAG genome file (.fa or .fasta) [REQUIRED]
    -g      MAG prokka output (.gff)
    -o      Output files prefix (include path) [REQUIRED]
-EOF
+EOF # 结束
 }
 
 # variables
@@ -56,7 +56,7 @@ do
 done
 
 # check arguments
-if [[ -z ${threads} ]] || [[ -z ${reads} ]] || [[ -z ${ref} ]] || [[ -z ${outprefix} ]] || [[ -z ${gff} ]]
+if [[ -z ${threads} ]] || [[ -z ${reads} ]] || [[ -z ${ref} ]] || [[ -z ${outprefix} ]] || [[ -z ${gff} ]] #-z 字符串的长度为零则为真
 then
      echo "ERROR : Please supply correct arguments"
      usage
