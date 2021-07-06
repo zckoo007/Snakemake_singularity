@@ -1,5 +1,5 @@
-__maintainer__ = "Chengkai Zhu"
-__email__ = "357171461@qq.com"
+__maintainer__ = ""
+__email__ = ""
 
 
 import os
